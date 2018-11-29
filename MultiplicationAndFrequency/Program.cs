@@ -20,12 +20,12 @@ namespace MultiplicationAndFrequency
             Console.WriteLine("First check by LINQ query");
             foreach ( var p in myNumber)
             {
-                Console.WriteLine(p.Key, p.Sum(), p.Count());
+                Console.WriteLine("number: {0}, number*frequency: {1}, frequency: {2}", p.Key, p.Sum(), p.Count());
             }
             Console.WriteLine("Additional check by LINQ method");
             foreach (var p in myNumberLambda)
             {
-                Console.WriteLine(p.Key, p.Sum(), p.Count());
+                Console.WriteLine("number: {0}, number*frequency: {1}, frequency: {2}", p.Key, p.Sum(), p.Count());
             }
             Console.ReadKey();
         }
